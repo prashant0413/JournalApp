@@ -1,7 +1,9 @@
 package net.engineeringdigest.journalApp.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 public class QuotesService {
-    private static final String apiKey = "kClmmQhFq8Vo3XAiIqctILsOnSfbg6QvXutRjQCJ";
+
+    @Value("${quotes.api.key}")
+    private String apiKey;
 }
